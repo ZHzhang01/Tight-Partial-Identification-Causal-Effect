@@ -1,0 +1,28 @@
+\begin{table}
+\caption{Real-data event-level interventional probability bounds. Since the confounder support is small in these real-data recodings, we enumerate all subset masses and compute the event-level TPI bounds exactly.}
+\label{tab:o2-table6}
+\begin{tabular}{rlllllllll}
+\toprule
+No. & Dataset & Subgroup & X & Y & U & H(U) & Jiang et al. (2023) & Tian--Pearl (2000) & Our bound \\
+\midrule
+1 & INSUR & UNDER 5000 MILES, NORMAL & 100,000 & 10,000 & ACCI & 0.092 & [0.000, 0.246] & [0.000, 0.800] & [0.000, 0.010] \\
+2 & INSUR & UNDER 5000 MILES, NORMAL & 100,000 & 100,000 & ACCI & 0.092 & [0.699, 0.996] & [0.196, 0.996] & [0.970, 0.996] \\
+3 & INSUR & UNDER 5000 MILES, NORMAL & 100,000 & 1,000,000 & ACCI & 0.092 & [0.004, 0.301] & [0.004, 0.804] & [0.004, 0.030] \\
+4 & INSUR & UNDER 5000 MILES, NORMAL & 1,000,000 & 10,000 & ACCI & 0.092 & [0.000, 0.044] & [0.000, 0.249] & [0.000, 0.010] \\
+5 & INSUR & UNDER 5000 MILES, NORMAL & 1,000,000 & 100,000 & ACCI & 0.092 & [0.000, 0.044] & [0.000, 0.249] & [0.000, 0.010] \\
+6 & INSUR & UNDER 5000 MILES, NORMAL & 1,000,000 & 1,000,000 & ACCI & 0.092 & [0.956, 1.000] & [0.751, 1.000] & [0.990, 1.000] \\
+1 & ADULT & BELOW HIGH SCHOOL, FULL-TIME & YES & <=50K & AGE & 0.209 & [0.605, 0.934] & [0.423, 0.934] & [0.837, 0.897] \\
+2 & ADULT & BELOW HIGH SCHOOL, FULL-TIME & NO & <=50K & AGE & 0.209 & [0.762, 0.985] & [0.496, 0.985] & [0.939, 0.985] \\
+3 & ADULT & BELOW HIGH SCHOOL, FULL-TIME & YES & >50K & AGE & 0.209 & [0.066, 0.395] & [0.066, 0.577] & [0.103, 0.163] \\
+4 & ADULT & BELOW HIGH SCHOOL, FULL-TIME & NO & >50K & AGE & 0.209 & [0.015, 0.238] & [0.015, 0.504] & [0.015, 0.061] \\
+5 & ADULT & ABOVE HIGH SCHOOL, PART-TIME & YES & <=50K & AGE & 0.406 & [0.186, 0.904] & [0.183, 0.904] & [0.553, 0.848] \\
+6 & ADULT & ABOVE HIGH SCHOOL, PART-TIME & NO & <=50K & AGE & 0.406 & [0.779, 0.983] & [0.703, 0.983] & [0.897, 0.983] \\
+7 & ADULT & ABOVE HIGH SCHOOL, PART-TIME & YES & >50K & AGE & 0.406 & [0.096, 0.814] & [0.096, 0.817] & [0.152, 0.447] \\
+8 & ADULT & ABOVE HIGH SCHOOL, PART-TIME & NO & >50K & AGE & 0.406 & [0.017, 0.221] & [0.017, 0.297] & [0.017, 0.103] \\
+9 & ADULT & ABOVE HIGH SCHOOL, FULL-TIME & YES & <=50K & AGE & 0.117 & [0.310, 0.664] & [0.250, 0.734] & [0.477, 0.493] \\
+10 & ADULT & ABOVE HIGH SCHOOL, FULL-TIME & NO & <=50K & AGE & 0.117 & [0.725, 0.954] & [0.438, 0.954] & [0.890, 0.920] \\
+11 & ADULT & ABOVE HIGH SCHOOL, FULL-TIME & YES & >50K & AGE & 0.117 & [0.336, 0.690] & [0.266, 0.750] & [0.507, 0.523] \\
+12 & ADULT & ABOVE HIGH SCHOOL, FULL-TIME & NO & >50K & AGE & 0.117 & [0.046, 0.275] & [0.046, 0.562] & [0.080, 0.110] \\
+\bottomrule
+\end{tabular}
+\end{table}
