@@ -1,0 +1,8 @@
+Synthetic O.1:
+Figure 5 uses U ~ Dir([0.1,0.1,0.1,0.1,0.1]) with d_u=5 and counts a Monte Carlo sample as non-vanilla if any of the four queries P(Y=y | do(X=x)), x,y in {0,1}, is non-vanilla. The entropy-binned experiment evaluates the information loss of entropy summaries H(U) in bits, with the H(U)=1 cutoff used for Figure 5. It is not a test of the large-d_u degeneration result in Proposition 9.
+
+Table 6:
+Event-level bounds are computed by first binary-recoding each multi-valued query as E=1{X=x}, F=1{Y in A}, then applying Theorem 10 with exact subset enumeration. Since the confounder support is small in these real-data recodings, we enumerate all subset masses and compute the event-level TPI bounds exactly.
+
+Table 7:
+Table 7 reports only binary ATE contrasts and strictly uses Proposition 12's distance-based valid bound: [L_vanilla + max{alpha_1 Delta_11^2 + alpha_0 Delta_00^2, Delta_ATE_L^2/d_u}, U_vanilla - max{alpha_0 Delta_01^2 + alpha_1 Delta_10^2, Delta_ATE_U^2/d_u}]. The INSURANCE rows were reconstructed as treatment contrasts for fixed outcome events, because the original same-treatment signed outcome contrasts are not binary ATEs and are not Proposition 12 estimands.
